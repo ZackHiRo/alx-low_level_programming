@@ -7,7 +7,7 @@
  */
 int _sqrt_recursion(int n)
 {
-    return find_sqrt(n, 1); // Start the search for square root from 1
+return find_sqrt(n, 1);
 }
 
 /**
@@ -18,11 +18,14 @@ int _sqrt_recursion(int n)
  */
 int find_sqrt(int n, int i)
 {
-    if (i * i > n) // If i*i exceeds n, n doesn't have a natural square root
-        return -1;
-    if (i * i == n) // If i*i equals n, i is the square root of n
-        return i;
-    
-    return find_sqrt(n, i + 1); // Recur with the next guess for the square root
+if (i * i > n)
+{
+return -1;
+}
+if (i * i == n)
+{
+return i;
+}
+return find_sqrt(n, i + 1);
 }
 
