@@ -15,7 +15,7 @@ unsigned int count = 0;
 
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
-return NULL;
+return (NULL);
 
 new_node->n = n;
 
@@ -23,7 +23,7 @@ if (idx == 0)
 {
 new_node->next = *head;
 *head = new_node;
-return new_node;
+return (new_node);
 }
 
 temp = *head;
@@ -36,12 +36,12 @@ count++;
 if (temp == NULL)
 {
 free(new_node);
-return NULL;
+return (NULL);
 }
 
 new_node->next = temp->next;
 temp->next = new_node;
 
-return new_node;
+return (new_node);
 }
 

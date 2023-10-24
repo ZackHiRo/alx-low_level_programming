@@ -13,14 +13,14 @@ listint_t *temp, *prev;
 unsigned int i = 0;
 
 if (*head == NULL)
-return -1;
+return (-1);
 
 if (index == 0)
 {
 temp = *head;
 *head = temp->next;
 free(temp);
-return 1;
+return (1);
 }
 
 temp = *head;
@@ -32,11 +32,11 @@ i++;
 }
 
 if (temp == NULL)
-return -1;
+return (-1);
 
 prev->next = temp->next;
 free(temp);
 
-return 1;
+return (1);
 }
 

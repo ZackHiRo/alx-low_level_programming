@@ -14,11 +14,11 @@ listint_t *current = head;
 while (current != NULL)
 {
 if (count == index)
-return current;
+return (current);
 count++;
 current = current->next;
 }
 
-return NULL; // Node at the given index does not exist
+return (NULL); // Node at the given index does not exist
 }
 
