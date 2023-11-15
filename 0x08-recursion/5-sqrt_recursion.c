@@ -1,5 +1,8 @@
 #include "main.h"
 
+/* Function prototype for find_sqrt */
+int find_sqrt(int n, int i);
+
 /**
 * _sqrt_recursion - Returns the natural square root of a number.
 * @n: The number to find the square root of.
@@ -7,7 +10,7 @@
 */
 int _sqrt_recursion(int n)
 {
-return find_sqrt(n, 1); // Start the search for square root from 1
+return (find_sqrt(n, 1)); /* Start the search for square root from 1 */
 }
 
 /**
@@ -18,11 +21,12 @@ return find_sqrt(n, 1); // Start the search for square root from 1
 */
 int find_sqrt(int n, int i)
 {
-if (i * i > n) /* If i*i exceeds n, n doesn't have a natural square root */
+if (i * i > n) /* If i*i exceeds n, n doesn't have a natural square root*/
 return (-1);
 if (i * i == n) /* If i*i equals n, i is the square root of n*/
 return (i);
 
-return (find_sqrt(n, i + 1)); /* Recur with the next guess for the square root */
+return (find_sqrt(n, i + 1));
+/* Recur with the next guess for the square root */
 }
 

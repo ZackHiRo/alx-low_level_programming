@@ -13,7 +13,7 @@ return (-1);
 if (y == 0) /* Base case: any number raised to the power of 0 is 1*/
 return (1);
 
-return x * _pow_recursion(x, y - 1);
+return (x * _pow_recursion(x, y - 1));
 /* Recur with y-1 and multiply the result with x */
 }
 
