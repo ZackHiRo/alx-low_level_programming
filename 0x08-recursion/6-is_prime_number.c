@@ -1,5 +1,8 @@
 #include "main.h"
 
+/* Function prototype for check_prime */
+int check_prime(int n, int divisor);
+
 /**
 * is_prime_number - Checks if a number is a prime number.
 * @n: The number to check.
@@ -22,9 +25,10 @@ if (n <= 1) /* If n is 1 or less, it's not a prime number */
 return (0);
 if (divisor > n / 2) /* If the divisor exceeds half of n, n is prime */
 return (1);
-if (n % divisor == 0) /* If n is divisible by divisor, it's not a prime number */
+if (n % divisor == 0)
+/* If n is divisible by divisor, it's not a prime number */
 return (0);
 
-return check_prime(n, divisor + 1); /* Recur with the next divisor */
+return (check_prime(n, divisor + 1)); /* Recur with the next divisor */
 }
 
