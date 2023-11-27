@@ -3,7 +3,7 @@
 
 /**
 * struct dog - a structure representing a dog
-* @name: name of the dog
+* @name: name of the doggo
 * @age: age of the dog
 * @owner: owner of the dog
 */

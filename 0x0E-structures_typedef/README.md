@@ -1,1 +1,1 @@
-This is the README file for 0x0E-structures_typedef Directory
+This is the README file for 0x0E-structures_typedef directory
